@@ -1,0 +1,54 @@
+
+
+ANGULAR
+
+
+INSTALAR ANGULAR
+npm install -g @angular/cli
+
+CREAR UN PROYECTO
+ng new nombre-del-proyecto
+
+CREAR UN COMPONENTE
+ng generate component nombre-del-componente
+
+CREAR UN SERVICIO
+ng generate service nombre-del-servicio
+
+INICIAR LA APLICACION
+ng serve
+ng serve -o ----->para que se abra la aplicacion de manera automatica
+(cuando se inicia la primera vez hace unas preguntas - luego se genera un link localhost)
+
+-------------------------------------NOTA-----------------------------------------
+Para ejecutar comandos sin restriccion en powershell
+se ingresa a powershell como administrador 
+
+Set-ExecutionPolicy Unrestricted ----->(respetar mayusculas y minusculas)
+le damos si
+
+para saber si se ejecuto el cambio 
+Get-ExecutionPolicy
+__________________________________________________________________________________
+
+para instalar los modulos del proyecto (node_modules)
+npm install
+
+___________________________________________________________________________________
+INSTALAR BOOSTRAP EN NUESTRO PROYECTO
+npm install bootstrap --save
+
+si nos aparece warn por jquery
+npm install jquery --save
+
+si nos aparece warn por pooper
+npm install popper.js --save
+
+para agregar bootstrap hacemos lo siguiente
+abrimos el archivo angular.json
+buscamos el apartado de styles agregamos "node_modules/bootstrap/dist/css/bootstrap.min.css"
+
+en scripts 
+"node_modules/jquery/dist/jquery.slim.min.js"
+"node_modules/popper.js/dist/umd/popper.min.js"
+"node_modules/bootstrap/dist/js/bootstrap.min.js"
