@@ -12,6 +12,7 @@ ng new nombre-del-proyecto
 CREAR UN COMPONENTE
 ng generate component nombre-del-componente
 
+
 CREAR UN SERVICIO
 ng generate service nombre-del-servicio
 
@@ -37,6 +38,7 @@ npm install
 ___________________________________________________________________________________
 INSTALAR BOOSTRAP EN NUESTRO PROYECTO
 npm install bootstrap --save
+@import "~bootstrap/dist/css/bootstrap.css"; ----> se coloca en el archivo styles.css principal
 
 si nos aparece warn por jquery
 npm install jquery --save

@@ -1,0 +1,28 @@
+
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>{{titulo}}</h1>
+            <form>
+                <div class="mb-3">
+                  <label for="primerNumero" class="form-label">Primer número</label>
+                  <input type="number" id="primerNumero" class="form-control" [(ngModel)]="valor1" name="valor1" placeholder="Ingresa un número" required>
+                </div>
+                <div class="mb-3">
+                  <label for="segundoNumero" class="form-label">Segundo número</label>
+                  <input type="number" id="segundoNumero" class="form-control" [(ngModel)]="valor2" name="valor2" placeholder="Ingresa un número" required>
+                </div>
+                <button type="button" (click)="sumar()" class="btn btn-primary botones">Calcular Suma</button>
+                <button type="button" (click)="restar()" class="btn btn-primary botones">Calcular Resta</button>
+                <button type="button" (click)="multiplicar()" class="btn btn-primary botones">Calcular Multiplicacion</button>
+              </form>
+              
+              <div *ngIf="resultado !== null">
+                <p>Resultado: {{ resultado }}</p>
+              </div>
+              
+            
+        </div>
+    </div>
+</div>

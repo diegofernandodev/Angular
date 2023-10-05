@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="col">
+    <h3>{{ titulo }}</h3>
+  </div>
+  <hr>
+  <app-formulario
+  (personaCreada)="personaAgregada($event)"
+  ></app-formulario>
+  <hr>
+</div>
+<app-persona *ngFor="let elementoPersona of personas; let i = index"
+[persona] = "elementoPersona"
+[indice] = "i"
+>
+  
+</app-persona>
+
+
+
+<!-- <router-outlet></router-outlet> -->
